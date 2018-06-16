@@ -1,0 +1,26 @@
+`lmgtfy` **Lmgtfy something.**
+`messages` **Check how many messages you have sent.**
+`ping` **Check the bots ping.**
+`purge` **Remove messages in your channel. Needs Manage Messages perms!**
+`rename` **Renames a channel. Needs Administration perms!**
+`restart` **Restarts the bot. Only for Bot Owner!**
+`say` **The bot says what you said.**
+`serverinfo` **Get info about your server.**
+`setafkchannel` **Sets the AFK channel. Needs Administration perms!**
+`setafktimeout` **Sets the AFK Timeout. Needs Administration perms!**
+`setprefix` **Sets the prefix on your server. Needs Administration perms!**
+`settopic` **Sets the channel topic. Needs Administration perms!**
+`shard` **Check which you are on.**
+`shardinfo` **Get info about shards.**
+`spotify` **Check someones spotify song.**
+`stats` **Get info about the bot.**
+`tts` **TTS something.**
+`twitch` **Check a Twitch Stream.**
+`uptime` **Check the bots uptime.**
+`userinfo` **Get info about a user.**
+`weather` **Check the weather.**
+`whisper` **Whipser to someone.**
+
+**Default prefix is `=`!**
+**Need support? Join this server: https://discord.gg/dgcD5A9**
+**You can also join here to suggest bot ideas and help me: https://discord.gg/e5U7prk**
