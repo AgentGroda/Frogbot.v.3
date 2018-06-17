@@ -17,7 +17,6 @@ let api = new PlexiDevApi(process.env.PLEXI_TOKEN);
 const queue = new Map();
 const ytdl = require('ytdl-core')
 const Youtube = require('simple-youtube-api')
-
 const youtube = new Youtube(process.env.YOUTUBE_TOKEN)
 const { Util } = require('discord.js')
 const fs = require('fs')
@@ -37,12 +36,7 @@ console.log(err)
 
   
   
-    client.on("ready", async () => {
-
-
-
-
-      
+    client.on("ready", async () => {  
         console.log(oneLine`
     Shard ${client.shard.id + 1}/${client.shard.count} ready!
     On ${client.guilds.size.toLocaleString()} guilds w/ ${client.users.size.toLocaleString()} users.`);
@@ -65,65 +59,35 @@ console.log(err)
 
 //}
 
-//setInterval(setActivity, 120000) //sets and picks a new game every 2 minutes
-      
-      
-
-
-      
-      
+//setInterval(setActivity, 120000) //sets and picks a new game every 2 minutes      
 console.log(`Bot is ready! ${client.user.username}`)
-
-
-
-
- //   snekfetch.post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
- //   .set('Authorization', key)
- //   .send({ server_count: client.guilds.size, 
- //         shard_count: client.shard.count, 
-  //  shard_id: client.shard.id })
-   // .then(() => console.log(`Posted to dbl.`))
-    //.catch((e) => console.error(e));
-    //})
-
-
     })
 
 
-    client.on('message', async message => {
-      
-      
+    client.on('message', async message => {  
       if(!message.guild) return;
-
-      
-      var prefix = '='
-let fetched = await db.fetch(`prefix_${message.guild.id}`);
-if (fetched === null) prefix = '='
-else prefix = fetched;
+	 var prefix = '=' //Default prefix
+	let fetched = await db.fetch(`prefix_${message.guild.id}`);
+	if (fetched === null) prefix = '='
+	else prefix = fetched;	//Custom prefix.
       
              const id = message.guild.members.get('364071140034871296');   
       if (message.content.startsWith(id)) {
       db.fetch(`guildprefix_${message.guild.id}`).then(p => {
       message.channel.send(`The prefix on this server is **${prefix}**`)
-
-      }) 
+      }) //If bot mention return this.
       
     }
 try {
     let messages = new db.table('messages');
     let a = '1'
     let targetBalnce = await messages.fetch(`messagesSent_${message.author.id}`)
-    let b = targetBalnce + 1;
-   // console.log(targetBalnce)
-   // console.log(b)
+    let b = targetBalnce + 1;)
    messages.set(`messagesSent_${message.author.id}`, b)
 }   catch (e) {
     
-}
+}//Message Count
 
-
-
-      
       let afk = new db.table('AFKs');
 
 // Check if author is AFK
@@ -165,46 +129,6 @@ if (mentioned) { // This will run if a member is mentioned
 
 }
 
-      
-      
-   //   async function setActivity() {
-    //Variable Array for what the setGame can be set to
-            const guilds = await client.shard.fetchClientValues('guilds.size');
-   // var Gameinfo = [`prefix: ${prefix}`, `Running on ${guilds} Servers`, `Running Commands`, `Try ${prefix}help`, `${prefix}help`,
-        `Using ${(((process.memoryUsage().heapUsed)/1024)/1024).toFixed(0)}Mb's of RAM`, `Ping to API: ${Math.round(client.ping)} Ms`, `${prefix}invite` // Change these to what you want, add as many or as few as you want to
-   // ]
-
-    //var info = Gameinfo[Math.floor(Math.random() * Gameinfo.length)]; //Random Math to set the setGame to something in the GameInfo array
-
-    //client.user.setActivity(info) // "playing Game" '...' Sets the setGame to what the info Random math picked from the GameInfo Array
-
-       // console.log(`[ LOG ] set Activity set to ( ${info} )`) //Logs to console what the setGame was set as.
-
-//}
-
-//setInterval(setActivity, 120000)
-
-      //  db.fetch(`guildprefix_${message.guild.id}`).then(o => {
-
-       //     let prefix
-//
-       //   if (o.text) {
-       //         prefix = o
-
-       //    } else {
-         //      prefix = '='
-         //   }
-       // })
-      
-      
-    //  let fetched = await db.fetch(`prefix_${message.guild.id}`);
-   ///   if (fetched === null) prefix = '=';
-     // else prefix = fetched;
-
-          
-
-
-      
         client.user.setStatus('online')
 
         let msg = message.content.toUpperCase();
@@ -224,19 +148,13 @@ if (mentioned) { // This will run if a member is mentioned
         }   catch (e) {
     
         }
-        
-
-  
-
-
-
-    
 
 client.on('guildCreate', guild => {
 
 console.log(`I've joined ${guild.name} server with ${guild.memberCount}`)
-});
+});//If new guild return;
 
+		//GuildMember Events
    client.on('guildMemberAdd', member => {
     if (!member.guild.available) return;
 
@@ -290,10 +208,7 @@ console.log(`I've joined ${guild.name} server with ${guild.memberCount}`)
 
 
 });
-
-
-
-    client.login(process.env.BOT_TOKEN)
+    client.login(process.env.BOT_TOKEN)//Login to your bot account.
 
 
 
