@@ -3,12 +3,5 @@ module.exports.run = async (client, message, args) => {
     let data = message.content.split(" ").slice(1).join(" ");
   
     client.channels.get('436897850270547978').send(`**New Todo!** ${data}`)
-
+  
 }
-exports.conf = {
-  aliases: ['example', 'chexample']
-  };
- 
-  exports.help = {
-  name: 'example', description: 'hello this is description', usage: 'example'
-  };
