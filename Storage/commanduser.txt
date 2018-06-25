@@ -1,20 +1,29 @@
-**Commands**
+**Commands*
+`8ball` **Yes or No**
 `addmessages` **Adds messages to your message count. Only for Bot Owner!**
 `addmoney` **Adds money to your balance. Only for Bot Owner!**
+`afk` **Sets your as AFK.**
+`age` **Sets your age in the profile.**
+`anime` **Shows a random anime.**
 `ascii` **Ascii some text.**
+`avatar` **Shows your or someone else**
 `balance` **Check your balance.**
 `botinfo` **Get info about the bot.**
+`ban` **Bans a user from your guild.**
 `bug` **Report a bug.**
 `channeldelete` **Deletes the channel you are in. Needs Administration perms!**
 `createchannel` **Creates a channel. Needs Administration perms!**
 `createinvite` **Creates an invite to your channel.**
 `creatensfwchannel` **Creates a nsfw channel. Needs Administration perms!**
+`dagjoke` **Sending a random dadjoke.**
+`daily` **Collect your daily.**
 `day` **Check the current time in your timezone.**
 `discrim` **Check how many people who has your and others discrim.**
 `dog` **Get a random dog.**
 `embed` **Creates an Embed.**
 `emojis` **Shows all custom emojis on your server.**
 `eval` **Eval code. Only for Bot Owner!**
+`exec` **Execute code. Only for Bot Owner!**
 `guilds` **Shows a list of all guilds.**
 `help` **Sends this list.**
 `invite` **Get a invite link to the bot.**
