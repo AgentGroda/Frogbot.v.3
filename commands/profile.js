@@ -23,9 +23,6 @@ try {
         let genders = new db.table('genders');
         genders.fetch(`genders_${member.id}`).then(obj => {
           if (obj === null) obj = 'Not set.';
-          if (obj === 1) obj = 'Female';
-          if (obj === 2) obj = 'Male';
-          if (obj === 3) obj = 'Nonbinary';
           const gender = obj
         
 
@@ -56,7 +53,7 @@ try {
     .setFooter(`Command by AgentGroda#6857`)
     .setTimestamp()
     .setColor('RANDOM')
-    .setDescription(`Info!\n Messages Sent: **${msg}**\n Money: **$${balance}**\n Reps: **${reps}**\n Gender: **${gender}**\n Nickname: **${nickname.username}**\n Age: **${age}**`)
+    .setDescription(`Info!\n Messages Sent: **${msg}**\n Money: **$${balance}**\n Reps: **${reps}**\n Gender: **${gender}**\n Nickname: **${nickname}**\n Age: **${age}**`)
     message.channel.send(embed)
 
 
