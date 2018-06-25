@@ -1,9 +1,26 @@
+`join` **Summons the bot into your voice channel.**
+`kick` **Kick a user from your guild.**
+`leave` **Leaves your voice channel.**
 `lmgtfy` **Lmgtfy something.**
+`lockdown` **Lockdows a channel.
+`love` **Love calculate.**
+`math` **Calculate something.**
 `messages` **Check how many messages you have sent.**
+`mute` **Mute a user in your guild.**
+`name` **Search for a name.**
 `ping` **Check the bots ping.**
+`play` **Plays a song from youtube**
+`profile` **Shows your profile**
+`profile-guide` **Get the profile guide.**
 `purge` **Remove messages in your channel. Needs Manage Messages perms!**
+`quiz` **Play the quiz**
+`reload` **Reload a command. Only Bot Owner!**
 `rename` **Renames a channel. Needs Administration perms!**
+`remindme` **The bot will remind you.**
+`rep` **Give a rep to someone.**
 `restart` **Restarts the bot. Only for Bot Owner!**
+`reverse` **Reverse some text.**
+`rps` **Rock Paper Scissors.**
 `say` **The bot says what you said.**
 `serverinfo` **Get info about your server.**
 `setafkchannel` **Sets the AFK channel. Needs Administration perms!**
@@ -20,7 +37,8 @@
 `userinfo` **Get info about a user.**
 `weather` **Check the weather.**
 `whisper` **Whipser to someone.**
+`youtube` **Get info about a youtube channel.**
 
 **Default prefix is `=`!**
-**Need support? Join this server: https://discord.gg/dgcD5A9**
-**You can also join here to suggest bot ideas and help me: https://discord.gg/e5U7prk**
+**Need support? Join this server: https://discord.gg/dgcD5A9 **
+**You can also join here to suggest bot ideas and help me: https://discord.gg/plexidev**
