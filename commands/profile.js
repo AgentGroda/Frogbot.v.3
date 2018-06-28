@@ -11,7 +11,7 @@ try {
     messageCount = await messages.fetch(`messagesSent_${message.author.id}`)
     const member = message.mentions.users.first() || message.author;
 
-    let msg = await messages.fetch(`messagesSent_${message.author.id}`)
+    let msg = await messages.fetch(`messagesSent_${member.id}`)
         if (msg === null) msg = 0;
         const money = new db.table('money')
 
